@@ -9,11 +9,9 @@ characters = [
     '񩦱', 'o', 'ᆒ', '<', '񑎾', '񈘵', 'ʤ', 'ʑ', '腞', '􈵻', '慴', '񦑙', '9', 'o', 'ա', 'Q', 'j', 'ʠ'
 ]
 
-for i in range(10000):
+for i in range(50000):
     name = ""
-    for i in range(75):
+    for var in range(150):
         name += characters[random.randint(0, len(characters) - 1)]
-        if random.randint(1, 10) == 9:
-            name += str(random.randint(1000, 100000))
-    name += str(random.randint(100000, 10000000))
     print(f'{name}')
+   
