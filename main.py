@@ -9,9 +9,10 @@ characters = [
     '񩦱', 'o', 'ᆒ', '<', '񑎾', '񈘵', 'ʤ', 'ʑ', '腞', '􈵻', '慴', '񦑙', '9', 'o', 'ա', 'Q', 'j', 'ʠ'
 ]
 
+# I don't know if you're actually trying to only do 50,000, but if you actually want to go on forever you could use "while True:" instead.
+
 for i in range(50000):
     name = ""
     for var in range(150):
         name += characters[random.randint(0, len(characters) - 1)]
-    print(f'{name}')
-   
+    print(name)
